@@ -67,7 +67,7 @@ if (NOT PCAP_LINKS_SOLO)
         set(PCAP_LIBRARY ${_tmp}
             CACHE STRING "Libraries needed to link against libpcap" FORCE)
     else (THREADS_FOUND AND PCAP_NEEDS_THREADS)
-        message(FATAL_ERROR "Couldn't determine how to link against libpcap")
+        #message(FATAL_ERROR "Couldn't determine how to link against libpcap")
     endif (THREADS_FOUND AND PCAP_NEEDS_THREADS)
 endif (NOT PCAP_LINKS_SOLO)
 
